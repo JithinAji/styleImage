@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <title>Dynamic image blur</title>
+  </head>
+  <body class="bg-gray-200">
+    <h1 class="text-center text-gray-800 text-8xl p-16 font-extrabold">
+      Update CSS Variables with
+      <span id="coloredTitle">JS</span>
+    </h1>
+    <div class="flex flex-row flex-nowrap">
+      <div class="mx-auto">
+        <div class="flex md:inline-block">
+          <span class="text-2xl mx-12 font-bold">Spacing</span>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="spacing"
+            class="w-46"
+          />
+        </div>
+        <div class="flex md:inline-block">
+          <span class="text-xl mx-12 font-bold">Blur</span>
+          <input
+            type="range"
+            min="0"
+            max="20"
+            value="0"
+            class="w-46"
+            id="blur"
+          />
+        </div>
+        <div class="flex md:inline-block">
+          <span class="text-xl mx-12 font-bold">Color</span>
+          <input type="color" name="favcolor" value="#ff0000" id="userColor" />
+        </div>
+        <div class="">
+          <img
+            src="dp.jpg"
+            alt="deadpool image"
+            class="object-center bg-red-600 mx-auto p-1 max-h-96 mt-12"
+            id="imageDeadPool"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./src/function.js"></script>
+  </body>
+</html>
